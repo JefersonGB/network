@@ -12,7 +12,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: blue;
+  background-color: #ccc;
   color: #333;
 }
 
@@ -160,3 +160,26 @@ a {
     }
   }
 }
+
+//Posts Page
+.post-form-header {
+  padding: 0.5rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+  & > div:first-child {
+    text-align: center;
+  }
+  a {
+    color: cadetblue;
+  }
+  img {
+    width: 150px;
+  }
+}
+
+@import "mobile";
